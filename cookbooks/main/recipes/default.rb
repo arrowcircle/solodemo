@@ -14,13 +14,6 @@ include_recipe "initial_update"
   end
 end
 
-node['rvm']['user_installs'] = [
-  {'user' => 'webmaster',
-    'default_ruby' => '1.9.3',
-    'rubies' => ['1.9.3']
-  }
-]
-
 include_recipe 'rvm::user'
 =begin
 execute "install 1.9.3" do
