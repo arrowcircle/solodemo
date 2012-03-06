@@ -1,7 +1,7 @@
 {
   "temp_dir":"/tmp",
   "run_list":["recipe[main]"],
-  "rvm":[
+  "rvm" = [
     {
       "user_installs" = [
         "user" => "webmaster",
