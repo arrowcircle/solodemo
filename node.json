@@ -1,11 +1,11 @@
 {
   "temp_dir":"/tmp",
   "run_list":["recipe[main]"],
-  "rvm": {
+  "rvm":{
     "user_installs":{
-      "user" => "webmaster",
-      "default_ruby" => "1.9.3",
-      "rubies" => ["1.9.3"]
+      "user":"webmaster",
+      "default_ruby":"1.9.3",
+      "rubies":["1.9.3"]
     }
   }
 }
