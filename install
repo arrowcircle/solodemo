@@ -1,0 +1,15 @@
+#!/bin/bash
+apt-get update -y -q;
+apt-get install git-core -y -q;
+apt-get install build-essential -y -q;
+apt-get install ruby -y -q;
+apt-get install ruby-dev -y -q;
+apt-get install libopenssl-ruby -y -q;
+apt-get install rubygems -y -q;
+apt-get install irb -y -q;
+apt-get install rake -y -q;
+apt-get install curl -y -q;
+gem install chef --no-ri --no-rdoc;
+git clone git://github.com/arrowcircle/solodemo.git /tmp/chef_run;
+cd /tmp/chef_run;
+/var/lib/gems/1.8/bin/chef-solo -c /tmp/chef_run/solo.rb -j /tmp/chef_run/node.json;
